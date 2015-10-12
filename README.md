@@ -1,2 +1,2 @@
-VIFF2
+Page diff tool
 ---------------

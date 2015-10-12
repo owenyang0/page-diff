@@ -1,11 +1,11 @@
 {
   "name": "page-diff",
   "version": "1.0.0",
-  "description": "VIFF2 ---------------",
+  "description": "Page diff",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha",
-    "node": "babel-node"
+    "build": "babel src -e 0 --out-dir lib"
   },
   "author": "LeiZeng",
   "license": "MIT",
@@ -16,6 +16,7 @@
     "virtual-dom": "^2.1.1"
   },
   "directories": {
+    "test": "test"
   },
   "devDependencies": {
     "babel": "^5.8.20",
@@ -27,10 +28,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LeiZeng/viff2.git"
+    "url": "git+https://github.com/LeiZeng/page-diff.git"
   },
   "bugs": {
-    "url": "https://github.com/LeiZeng/viff2/issues"
+    "url": "https://github.com/LeiZeng/page-diff/issues"
   },
-  "homepage": "https://github.com/LeiZeng/viff2#readme"
+  "homepage": "https://github.com/LeiZeng/page-diff#readme"
 }
