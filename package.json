@@ -1,0 +1,36 @@
+{
+  "name": "page-diff",
+  "version": "1.0.0",
+  "description": "VIFF2 ---------------",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha",
+    "node": "babel-node"
+  },
+  "author": "LeiZeng",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "html2hscript": "^1.0.6",
+    "request": "^2.60.0",
+    "virtual-dom": "^2.1.1"
+  },
+  "directories": {
+  },
+  "devDependencies": {
+    "babel": "^5.8.20",
+    "babel-eslint": "^3.1.23",
+    "eslint": "^0.24.1",
+    "mocha": "^2.2.5",
+    "nock": "^2.10.0",
+    "should": "^7.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeiZeng/viff2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LeiZeng/viff2/issues"
+  },
+  "homepage": "https://github.com/LeiZeng/viff2#readme"
+}
