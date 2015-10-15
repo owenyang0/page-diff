@@ -10,6 +10,7 @@
   "author": "LeiZeng",
   "license": "MIT",
   "dependencies": {
+    "cli-table": "^0.3.1",
     "commander": "^2.8.1",
     "html2hscript": "^1.0.6",
     "request": "^2.60.0",

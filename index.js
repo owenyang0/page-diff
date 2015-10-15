@@ -1,15 +1,11 @@
 require('babel/register')
 var app = require('./src')
 
+var output = require('./src/output')
+
 app
-.diff('https://test.aami.com.au/', 'https://www.aami.com.au/')
+.diff('https://www.baidu.com/', 'https://www.baidu.com/')
 .then(function (patches) {
-  // console.log(patches.map(function(p){
-  //   return {
-  //     patch: p.patch.value,
-  //     tag: p.vNode.tagName
-  //   }
-  // }))
-  console.log(patches)
+  console.log(output(patches))
 })
-.catch(console.log)
+.catch(console.error)
