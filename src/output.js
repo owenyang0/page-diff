@@ -1,4 +1,5 @@
 import Table from 'cli-table'
+import chalk from 'chalk'
 
 // VirtualPatch.NONE = 0
 // VirtualPatch.VTEXT = 1
@@ -68,10 +69,18 @@ function defaultPatch (patch) {
   return ['Haven\'t been implemented', '', 'type ' + type + ' | ' + tag]
 }
 
+function summary (patches) {
+  var sum = chalk.blue('\r\n================',
+    chalk.red('Summaries') + ' ================\r\n')
+  sum += 'Differences: ' + patches.length
+
+  return sum
+}
+
 export default function (patches) {
   Array.prototype.push.apply(table, formatPatches(patches))
 
-  return table.toString()
+  return table.toString() + summary(patches)
 }
 
 
